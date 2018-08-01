@@ -11,7 +11,10 @@
 \usepackage{multimedia}
 \usepackage{booktabs}
 
-\usepackage{caption}
+% \usepackage{caption}
+% \makeatletter
+% \let\@@magyar@captionfix\relax
+% \makeatother
 \usepackage[square]{natbib} % Bibliography, citing: [\citet{storm_nonlinear_2005}]
 \usepackage[scale=2]{ccicons}
 
@@ -156,7 +159,8 @@
   \end{alertblock}
 \end{frame}
 
-\begin{frame}{Join the Massey study group}
+% without [fragile] the character # creates errors.
+\begin{frame}[fragile]{Join the Massey study group}
   \url{https://groups.google.com/forum/#!aboutgroup/massey-study-group}
 
   We are organizing a study group with monthly meetings, where we learn something related with computational tools.
